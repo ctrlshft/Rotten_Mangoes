@@ -30,7 +30,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
  gem 'bcrypt', '~> 3.1.7'
  gem 'rmagick'
  gem 'carrierwave'
-
+ gem 'kaminari'
 # Use unicorn as the app server
 # gem 'unicorn'
 
