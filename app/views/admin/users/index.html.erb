@@ -1,8 +1,9 @@
 <h1>Hello admin</h1>
   <hr>
+  <%= paginate @users %>
   <% @users.each do |user| %>
-    <h2><%= link_to user.id, admin_user_path(user) %></h2>
-    <h3><%= user.firstname %></h3>
+    <h2><%= link_to user.full_name, admin_user_path(user) %></h2>
+    <h3><%= user.email %></h3>
   <% end %>
   <hr>
 <h3><%= link_to 'Create New User', new_admin_user_path %></h3>
